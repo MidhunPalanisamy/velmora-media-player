@@ -1,6 +1,6 @@
-# 🎬 Cynara
+# 🎬 Velmora
 
-Cynara is a robust, production-grade desktop video player built with Electron. It features a smart media library system, real-time folder watching, and advanced playback controls including a VLC-style audio boost.
+Velmora is a robust, production-grade desktop video player built with Electron. It features a smart media library system, real-time folder watching, and advanced playback controls including a VLC-style audio boost.
 
 ## ✨ Features
 

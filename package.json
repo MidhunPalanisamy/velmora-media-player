@@ -1,6 +1,6 @@
 {
-  "name": "cynara",
-  "productName": "Cynara",
+  "name": "velmora",
+  "productName": "Velmora",
   "version": "1.0.0",
   "description": "A robust local video library player",
   "author": "Midhun Palanisamy",
@@ -18,16 +18,16 @@
     "build": "electron-builder"
   },
   "build": {
-    "appId": "com.cynara.player",
-    "productName": "Cynara",
+    "appId": "com.velmora.player",
+    "productName": "Velmora",
     "mac": {
       "target": "dmg",
-      "icon": "assets/cynara.icns",
+      "icon": "assets/velmora.icns",
       "category": "public.app-category.video"
     },
     "win": {
       "target": "nsis",
-      "icon": "assets/cynara.ico"
+      "icon": "assets/velmora.ico"
     },
     "directories": {
       "output": "dist"

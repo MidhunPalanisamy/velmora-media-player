@@ -53,7 +53,7 @@ if (!gotTheLock) {
       height: 800,
       backgroundColor: '#0a0a0a',
       titleBarStyle: 'hiddenInset',
-      title: 'Cynara',
+      title: 'Velmora',
       webPreferences: {
         preload: path.join(__dirname, 'preload.js'),
         nodeIntegration: false,
