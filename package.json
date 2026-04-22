@@ -27,7 +27,7 @@
 
     "publish": null,
 
-    "artifactName": "Velmora-${version}-${os}.${ext}",
+    "artifactName": "Velmora-${version}-${os}-${arch}.${ext}",
 
     "mac": {
       "target": [
