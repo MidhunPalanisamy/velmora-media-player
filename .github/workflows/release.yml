@@ -11,8 +11,8 @@ permissions:
 jobs:
   build:
     runs-on: ${{ matrix.os }}
-
     strategy:
+      fail-fast: false
       matrix:
         os: [macos-latest, windows-latest]
 
@@ -26,14 +26,23 @@ jobs:
           node-version: 18
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
+
+      - name: Set version from tag
+        run: |
+          VERSION=${GITHUB_REF#refs/tags/v}
+          echo "Version: $VERSION"
+          npm version $VERSION --no-git-tag-version
 
       - name: Build app
         run: npm run build
+        env:
+          CSC_IDENTITY_AUTO_DISCOVERY: false
 
-      - name: Upload artifacts
+      - name: Upload Release
         uses: softprops/action-gh-release@v1
         with:
+          name: Velmora v${{ github.ref_name }}
           files: |
             dist/*.dmg
             dist/*.exe
