@@ -20,6 +20,7 @@
   "build": {
     "appId": "com.velmora.player",
     "productName": "Velmora",
+    "publish": null,
     "mac": {
       "target": "dmg",
       "icon": "assets/velmora.icns",
